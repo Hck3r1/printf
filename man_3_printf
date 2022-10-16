@@ -1,12 +1,12 @@
 .\" Manpage for _printf.
-.TH _printf 3 "30 July 2019" "1.0" "Program Manual for _printf"
+.TH _printf 3 "October 14 2022" "1.0" "Program Manual for _printf"
 .SH NAME
  _printf - formatted output conversion and print data.
 .SH SYNOPSIS
 .nf
 .BI printf (FORMAT, ARGUMENT)...
 .PP
-.BI "#include 'holberton.h'"
+.BI "#include 'main.h'"
 .BI "#include <stdarg.h>"
 .BI "#include <unistd.h>"
 .PP
@@ -97,14 +97,13 @@ The character \fI%\fR is followed by zero the following flags:
 .B ' '
 .R A space in blank should be left before a positive number followed by a signed conversion.
 .SH NOTES
-.R The \fB_printf()\fR is a project collaboration between \fBDiego López\fR and \fBLuis Chaparro\fR, actual students of Software Engineering at \fBHolberton School\fR.
+.R The \fB_printf()\fR is a project collaboration between \fBIdima Oluwaferanmi\fR and \fBJesufemi Adetomiwa\fR
 .SH BUGS
-<<<<<<< HEAD
 .R In process
 .SH EXAMPLE
-.R To print the the string \fBHello Holberton!\fR and its length in decimal.
+.R To print the the string \fBHello ALX!\fR and its length in decimal.
 
-#include ''holberton.h''
+#include ''main.h''
 
 int main(void)
 
@@ -112,11 +111,11 @@ int main(void)
 
 	int length;
 
-	_printf(''%s'', ''Hello, Holberton!'')
+	_printf(''%s'', ''Hello, ALX!'')
 
-	_printf(''Hello Holberton! contains %d characters'', length);
+	_printf(''Hello ALX! contains %d characters'', length);
 
-	length = _printf(''Hello Holberton!'');
+	length = _printf(''Hello ALX!'');
 
 	return (0);
 
@@ -124,9 +123,4 @@ int main(void)
 .SH SEE ALSO
 .R printf(3)
 .SH AUTHORS
-Written by \fBDiego López\fR and \fBLuis Chaparro\fR.
-=======
-Report _printf Idima Oluwaferanmi (feranmiidima82@gmail.com) and Adetomiwa Jesufemi
-.SH AUTHORS
-Idima Oluwaferanmi and Adetomiwa Jesufemi, Cohort 9.
->>>>>>> d748e9aa70da3884e42da53780a5794144094f00
+Written by \fBIdima Oluwaferanmi\fR and \fBJesufemi Adetomiwa\fR.
